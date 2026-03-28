@@ -70,3 +70,6 @@ console.log(fruits[1]);     // banana
 console.log(fruits[2]);     // cherry
 fruits.push("date"); // Adding a new fruit to the array
 console.log(fruits.length);
+
+fruits.pop(); // Removing the last fruit from the array
+console.log(fruits.length); // 3
