@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+
+<html lang="cs-cz">
+    <head>
+        <meta charset="utf-8" />
+        <title>Datum a čas v JavaScriptu</title>
+    </head>
+
+    <body>
+        <script type="text/javascript">
+            const date = new Date(); // Vytvoří proměnnou, ve které je aktuální datum a čas
+            document.body.innerHTML += "Dnes je: " + date.getDate() + ". " + (date.getMonth() + 1) + ". " + date.getFullYear();
+            document.body.innerHTML += "<br>";
+            document.body.innerHTML += "Čas je: " + date.getHours() + ":" + date.getMinutes();
+        </script>
+    </body>
+</html>

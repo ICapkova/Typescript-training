@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+
+<html lang="cs-cz">
+    <head>
+        <meta charset="utf-8" />
+        <title>Proměnné v JavaScriptu</title>
+    </head>
+
+    <body>
+        <script>
+            const a = 10;
+            const b = 20;
+            const vysledek = a + b;
+            document.body.innerHTML += "Zde je součet čísel a a b: ";
+            document.body.innerHTML += vysledek;
+            document.body.innerHTML += "<br>"; // Vložíme HTML tag pro nový řádek
+
+            const jmeno = "Karel";
+            const prijmeni = "Novák";   
+            const osoba = jmeno + prijmeni;
+            document.body.innerHTML += "Zde je součet řetězců jmeno a prijmeni: ";
+            document.body.innerHTML += osoba;
+            document.body.innerHTML += "<br>"; // Vložíme HTML tag pro nový řádek
+
+            const den = "Pondělí";
+            const datum = "27. března 2026";
+            const zprava = "Dnes je " + den + " a datum je " + datum + ".";
+            document.body.innerHTML += "Zde je zpráva vytvořená z proměnných den a datum: ";
+            document.body.innerHTML += zprava;
+            document.body.innerHTML += "<br>"; // Vložíme HTML tag pro nový řádek
+
+            const jine_jmeno = "Petr";
+            const id = 20;
+            const jina_osoba = jine_jmeno + id;
+            document.body.innerHTML += "Zde je součet řetězce a čísla: ";
+            document.body.innerHTML += jina_osoba;
+            document.body.innerHTML += "<br>"; // Vložíme HTML tag pro nový řádek
+        </script>
+    </body>
+</html>
