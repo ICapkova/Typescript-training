@@ -74,3 +74,67 @@ let message = updateStudentCourse(student2, "TypeScript");
 console
 
 printStudentSummary(student2); // Output: Jméno: Eva, Věk: 25, Aktivní: true, Kurz: TypeScript
+
+
+let user: {
+    name: string;
+    age: number;
+    isOnline: boolean;
+} = {
+    name: "Iva",
+    age: 30,
+    isOnline: true
+};
+
+function printUser(user: { name: string; age: number; isOnline: boolean }): void {
+    console.log("Jméno: " + user.name);
+    console.log("Věk: " + user.age);
+    console.log("Online: " + user.isOnline);
+}
+
+function getUserMessage(user: { name: string; age: number; isOnline: boolean }): string {
+    if (user.isOnline) {
+        return user.name + " je online.";
+    } else {
+        return user.name + " je offline.";
+    }
+}
+
+printUser(user); // Output: Jméno: Iva, Věk: 30, Online: true
+console.log(message); // Output: Iva je online.
+
+getUserMessage(user); // Output: Iva je online.
+
+user.isOnline = false;
+console.log(getUserMessage(user)); // Output: Iva je offline.
+printUser(user); // Output: Jméno: Iva, Věk: 30, Online: false
+getUserMessage(user); // Output: Iva je offline.
+
+
+let result = printUser(user);
+let result2 = getUserMessage(user);
+console.log(result); // Output: undefined
+console.log(result2); // Output: Iva je offline.
+
+
+function getUserMessage(user: { name: string; isOnline: boolean }): string {
+    if (user.isOnline) {
+        return user.name + " je online";
+    } else {
+        return user.name + " je offline";
+    }
+}
+
+function displayMessage(message: string): void {
+    console.log("Zpráva: " + message);
+}
+
+let user = {
+    name: "Iva",
+    isOnline: true
+};
+
+let message = getUserMessage(user);
+console.log(message); // Output: Iva je online
+displayMessage(message); // Output: Zpráva: Iva je online
+
