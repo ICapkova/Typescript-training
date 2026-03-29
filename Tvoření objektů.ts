@@ -99,3 +99,36 @@ console.log(Math.random()); // Output: A random number between 0 and 1
 console.log(student.age); // Output: 31
 console.log(student.course); // Output: TypeScript
 console.log(student.isActive); // Output: false
+
+
+let product: {
+    name: string;
+    price: number;
+    inStock: boolean;
+    category?: string; // Optional property for the product category
+} = {
+    name: "Notebook",
+    price: 25000,
+    inStock: true
+};
+
+console.log(product.name); // Output: Notebook
+console.log(product.price); // Output: 25000
+console.log(product.inStock); // Output: true
+console.log(product.category); // Output: undefined
+
+product.price = 23000; // Updating the price
+product.category = "Electronics"; // Adding a new property to the product object
+product.inStock = false; // Updating the stock status
+
+console.log(product.name.length); // Output: 8
+console.log(product.name.toLowerCase()); // Output: notebook
+console.log(product.name.includes("book")); // Output: true
+
+console.log(product.price); // Output: 23000
+console.log(product.category); // Output: Electronics
+console.log(product.inStock); // Output: false
+console.log(product.price > 20000); // Output: true
+
+product.name = "Laptop"; // Updating the product name
+console.log(product.name.toLocaleUpperCase()); // Output: LAPTOP
