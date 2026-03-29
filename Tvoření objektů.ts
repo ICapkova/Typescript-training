@@ -73,3 +73,29 @@ console.log(fruits.length);
 
 fruits.pop(); // Removing the last fruit from the array
 console.log(fruits.length); // 3
+
+
+let student: {
+    name: string; age: number; isActive: boolean; course?: string; // Optional property for the list of courses
+} = { name: "Iva",
+    age: 30,
+    isActive: true
+};
+
+console.log(student.name); // Output: Iva
+console.log(student.age); // Output: 30
+console.log(student.isActive); // Output: true
+console.log(student.course); // Output: undefined
+
+student.age = 31; // Updating the age
+student.course = "TypeScript"; // Adding a new property to the student object
+student.isActive = false; // Updating the active status
+
+console.log(student.name.length); // Output: 3
+console.log(student.name.toUpperCase()); // Output: IVA
+console.log(student.name.includes("v")); // Output: true
+console.log(Math.random()); // Output: A random number between 0 and 1
+
+console.log(student.age); // Output: 31
+console.log(student.course); // Output: TypeScript
+console.log(student.isActive); // Output: false
